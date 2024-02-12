@@ -82,20 +82,36 @@
                             <span class="text-lg">cm</span>
                         </div>
                         <div class="p-4">
-                            <p class="text-xl">Area: <span id="parallelogram-area"></span> <span>cm <sup>2</sup></span></p>
+                            <p class="text-xl">Area: <span id="parallelogram-area"></span> <span>cm <sup>2</sup></span>
+                            </p>
                         </div>
                         <div class="card-actions">
-                            <button onclick="calculateParallalogramArea()" class="btn btn-primary w-full">Calculate</button>
+                            <button onclick="calculateParallalogramArea()"
+                                class="btn btn-primary w-full">Calculate</button>
                         </div>
                     </div>
                 </div>
+
+                <!-- rombush card -->
                 <div class="card  bg-base-100 shadow-xl">
                     <figure><img src="images/rhombus.png" alt="Shoes" /></figure>
                     <div class="card-body">
                         <h2 class="text-center text-3xl">Rhombus</h2>
-                        <p>Area (A) =</p>
+                        <p class="text-center">Area (A) = 0.5 * d <sub>1</sub> *d <sub>2</sub></p>
+                        <div class="flex space-x-4 items-center justify-center">
+                            <input id="rombush-d-one" class="w-24 p-2 text-2xl rounded-md border" type="text"
+                                placeholder="w">
+                            <span class="text-lg">cm</span>
+                            <input id="rombush-d-two" class="w-24 p-2 text-2xl rounded-md border" type="text"
+                                placeholder="l">
+                            <span class="text-lg">cm</span>
+                        </div>
+                        <div class="p-4">
+                            <p class="text-xl">Area: <span id="rombush-area"></span> <span>cm <sup>2</sup></span>
+                            </p>
+                        </div>
                         <div class="card-actions">
-                            <button class="btn btn-primary w-full">Calculate</button>
+                            <button onclick="calculateRombushArea()" class="btn btn-primary w-full">Calculate</button>
                         </div>
                     </div>
                 </div>
@@ -113,6 +129,7 @@
     <script src="scripts/triangel.js"></script>
     <script src="scripts/ractange.js"></script>
     <script src="scripts/parallalogram.js"></script>
+    <script src="scripts/rombush.js"></script>
 </body>
 
 </html>
